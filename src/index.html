@@ -14,6 +14,17 @@
         <div class="col-md-6 offset-md-3 mb-5">
           <h1>HTTP UI</h1>
 
+          <h3>Documentation</h3>
+          <pre class="mb-5"><code>
+GET /inputs -> [{"id": 1, "payload": {"input": "test"}]
+GET /results -> [{"id": 1, "payload": {"result": "is a test"}]
+
+POST /inputs {"id": 1, "payload": {"input": "test"} -> [{"id": 1, "payload": {"input": "test"}]
+POST /results {"id": 1, "payload": {"result": "is a test"}} -> [{"id": 1, "payload": {"result": "is a test"}]
+
+GET /reset -> clears all the inputs and results
+</pre></code>
+
           <form class="form-inline">
             <div class="form-group mr-2 mb-2">
               <label for="userInput">User Input</label>
